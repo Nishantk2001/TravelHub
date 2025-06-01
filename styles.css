@@ -412,7 +412,7 @@ body {
 
 .destination-cards .card {
   /* flex: 1 1 min(350px, 100%); */
-  width: 350px;
+  width: 320px;
   background-color: white;
   border-radius: 1rem;
   overflow: hidden;
