@@ -230,7 +230,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 2rem;
+  padding: 2rem 4rem;
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -308,6 +308,7 @@ body {
   .hero {
     flex-direction: column;
     text-align: center;
+    padding: 2rem 2rem;
   }
 
   .hero-content {
@@ -356,7 +357,7 @@ body {
 
 /* Featured DestinationsSection */
 .top-destinations {
-  padding: 3rem 2rem;
+  padding: 3rem 4rem;
   background-color: #fdf7f3;
   font-family: "Segoe UI", sans-serif;
   max-width: 100%;
@@ -463,6 +464,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .top-destinations {
+    padding: 2rem 2rem;
+  }
   .destination-cards {
     flex-direction: column;
     align-items: center;
@@ -485,7 +489,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  padding: 3rem 2rem;
+  padding: 3rem 4rem;
 }
 .image-column,
 .text-column {
@@ -666,7 +670,7 @@ body {
 .user-info {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .user-avatar {
@@ -702,7 +706,7 @@ body {
 }
 
 .rating {
-  color: #ffd700;
+  color: #efcc02;
   margin-bottom: 20px;
   font-size: 1.2rem;
 }
