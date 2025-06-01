@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>TravelHub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="./assets/Travelhublogo.png" alt="TravelHub Logo" />
+      </div>
+      <div class="nav">
+        <nav class="nav-links" id="navLinks">
+          <a href="#Destinations">Destination</a>
+          <a href="#Travelplan">Travel plan</a>
+          <a href="#testimonial">Testimonial</a>
+          <a href="#">Blog</a>
+        </nav>
+
+        <!-- 🔍 Search Input -->
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search..." />
+        </div>
+
+        <button class="sign-in">Sign in</button>
+
+        <div class="burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>
+          Plan your next adventure<br />with
+          <span class="highlight">TravelHub</span>
+        </h1>
+        <p>
+          Find the unique moments and hidden gems that ignite unforgettable
+          experiences. From rare encounters to remarkable destinations, we help
+          you uncover the spark that turns every trip into a cherished story.
+        </p>
+        <div class="cta-buttons">
+          <button class="btn-explore">Explore Packages</button>
+          <button class="btn-plan">Start Planning</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="./assets/Heroimg.png" alt="Travel Highlight" />
+      </div>
+    </section>
+    <section class="top-destinations" id="Destinations">
+      <h2>Featured Destinations</h2>
+      <nav class="destination-tabs">
+        <a class="active" href="#">Popular</a>
+        <a href="#">USA</a>
+        <a href="#">Europe</a>
+        <a href="#">Asia</a>
+        <a href="#">Africa & Middle East</a>
+        <a href="#">Australia & The Pacific</a>
+        <a href="#">Canada</a>
+        <a href="#">More ▾</a>
+        <button class="btn-outline">Explore all destinations</button>
+      </nav>
+      <div class="destination-cards">
+        <div class="card">
+          <img src="./assets/img1.jpg" alt="Bali" />
+          <h3>Bali</h3>
+          <p>
+            Relax in paradise with tranquil beaches, vibrant temples, and rich
+            Balinese culture.
+          </p>
+          <div class="card-btn">
+            <button class="btn-feature">View Details <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            <button class="btn-feature">Book Now <i class="fa-solid fa-location-dot"></i></button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/img2.jpg" alt="Iceland" />
+          <h3>Iceland</h3>
+          <p>
+            Explore glaciers, volcanoes, and northern lights in this stunning
+            arctic wonderland.
+          </p>
+          <div class="card-btn">
+          <button class="btn-feature">View Details <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+          <button class="btn-feature">Book Now <i class="fa-solid fa-location-dot"></i></button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/img3.jpg" alt="Kyoto" />
+          <h3>Kyoto</h3>
+          <p>
+            Experience ancient temples, serene gardens, and seasonal cherry
+            blossoms in Japan’s cultural heart.
+          </p>
+          <div class="card-btn">
+          <button class="btn-feature">View Details <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+          <button class="btn-feature">Book Now <i class="fa-solid fa-location-dot"></i></button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/img4.jpg" alt="Santorini" />
+          <h3>Santorini</h3>
+          <p>
+            Marvel at white-washed cliffs, blue domes, and stunning Aegean
+            sunsets in Greece.
+          </p>
+          <div class="card-btn">
+          <button class="btn-feature">View Details <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+          <button class="btn-feature">Book Now <i class="fa-solid fa-location-dot"></i></button>
+        </div>
+      </div>
+    </section>
+    <section class="how-it-works" id="Travelplan">
+        <div class="container">
+          
+          <!-- Left Image Column -->
+          <div class="image-column">
+            <img src="./assets/howitworkimg.png" alt="Discover" class="main-img" />
+          </div>
+    
+          <!-- Right Text Column -->
+          <div class="text-column">
+            <p class="section-label">Plan Your Journey</p>
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-description">
+                From discovering hidden gems to customizing your itinerary and traveling confidently, we simplify your journey planning every step of the way. Here's how you can get started:
+              </p>
+    
+              <div class="step">
+                <img src="./assets/timg1.png" alt="Icon" class="step-icon" />
+                <div>
+                  <h3>Discover Destinations</h3>
+                  <p>Explore breathtaking locations, off-the-beaten-path experiences, and popular spots handpicked to match your interests, making each trip truly unforgettable and personalized.</p>
+                </div>
+              </div>
+            
+              <div class="step">
+                <img src="./assets/timg2.png" alt="Icon" class="step-icon" />
+                <div>
+                  <h3>Customize Your Trip</h3>
+                  <p>Craft a travel plan that fits your timeline and budget. Choose your own activities, accommodations, and pace to ensure a smooth and stress-free experience.</p>
+                </div>
+              </div>
+            
+              <div class="step">
+                <img src="./assets/timg3.png" alt="Icon" class="step-icon" />
+                <div>
+                  <h3>Travel Smart</h3>
+                  <p>Receive real-time updates, local tips, and 24/7 support, empowering you to travel with confidence and make the most of every moment of your journey.</p>
+                </div>
+          </div>
+          </div>
+        </div>
+      </section>
+<!-- testimonial Section -->
+<section class="testimonial-section" id="testimonial">
+  <div class="container">
+      <h2>What Our Travelers Say</h2>
+      <p class="subtitle">Hear from our happy customers about their experiences</p>
+      
+      <div class="testimonial-carousel-container">
+          <div class="testimonial-carousel">
+              <div class="testimonial-card">
+                  <div class="user-info">
+                      <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson" class="user-avatar">
+                      <div class="user-details">
+                          <h4>Sarah Johnson</h4>
+                          <p class="location"><i class="fas fa-map-marker-alt"></i> New York, USA</p>
+                      </div>
+                  </div>
+                  <div class="testimonial-content">
+                      <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                      </div>
+                      <p class="quote">"The European tour was absolutely amazing! Every detail was perfectly planned, from the hotels to the local guides. I've never felt so taken care of on a vacation before."</p>
+                  </div>
+              </div>
+              
+              <div class="testimonial-card">
+                  <div class="user-info">
+                      <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael Chen" class="user-avatar">
+                      <div class="user-details">
+                          <h4>Michael Chen</h4>
+                          <p class="location"><i class="fas fa-map-marker-alt"></i> Toronto, Canada</p>
+                      </div>
+                  </div>
+                  <div class="testimonial-content">
+                      <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <p class="quote">"Our family trip to Bali was unforgettable. The team handled all the logistics so we could just enjoy our time together. The kids still talk about the private beach picnic!"</p>
+                  </div>
+              </div>
+              
+              <div class="testimonial-card">
+                  <div class="user-info">
+                      <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya Patel" class="user-avatar">
+                      <div class="user-details">
+                          <h4>Priya Patel</h4>
+                          <p class="location"><i class="fas fa-map-marker-alt"></i> London, UK</p>
+                      </div>
+                  </div>
+                  <div class="testimonial-content">
+                      <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                      </div>
+                      <p class="quote">"As a solo female traveler, I felt completely safe and supported throughout my Southeast Asia adventure. The local guides were knowledgeable and the itinerary was perfect."</p>
+                  </div>
+              </div>
+              
+              <!-- Additional testimonials -->
+              <div class="testimonial-card">
+                  <div class="user-info">
+                      <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="David Wilson" class="user-avatar">
+                      <div class="user-details">
+                          <h4>David Wilson</h4>
+                          <p class="location"><i class="fas fa-map-marker-alt"></i> Sydney, Australia</p>
+                      </div>
+                  </div>
+                  <div class="testimonial-content">
+                      <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                      </div>
+                      <p class="quote">"The African safari exceeded all expectations. Our guide was incredibly knowledgeable and we saw the Big Five within the first two days! Lifetime experience."</p>
+                  </div>
+              </div>
+              
+              <div class="testimonial-card">
+                  <div class="user-info">
+                      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria Garcia" class="user-avatar">
+                      <div class="user-details">
+                          <h4>Maria Garcia</h4>
+                          <p class="location"><i class="fas fa-map-marker-alt"></i> Madrid, Spain</p>
+                      </div>
+                  </div>
+                  <div class="testimonial-content">
+                      <div class="rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                      </div>
+                      <p class="quote">"The cruise package was wonderful. Excellent food, comfortable cabins, and breathtaking destinations. Only wish the Wi-Fi was better, but that's a minor complaint."</p>
+                  </div>
+              </div>
+              <div class="testimonial-card">
+                <div class="user-info">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria Garcia" class="user-avatar">
+                    <div class="user-details">
+                        <h4>Maria Garcia</h4>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Madrid, Spain</p>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="quote">"The cruise package was wonderful. Excellent food, comfortable cabins, and breathtaking destinations. Only wish the Wi-Fi was better, but that's a minor complaint."</p>
+                </div>
+            </div>
+          </div>
+      </div>
+      
+      <div class="carousel-controls">
+          <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+          <div class="indicators">
+              <span class="indicator active"></span>
+              <span class="indicator"></span>
+              <span class="indicator"></span>
+          </div>
+          <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+  </div>
+</section>
+  
+<!-- subscription section -->
+<section class="subscribe-section">
+  <h1>Get Your Travel Inspiration<br />Straight to Your Inbox</h1>
+  <form class="form-container" onsubmit="subscribe(event)">
+    <input type="email" placeholder="Email address" id="email" required />
+    <button type="submit">Subscribe</button>
+  </form>
+  <p>Subscribe to our newsletters and exclusive promotions. Read our <a href="#">Privacy Policy</a>.</p>
+</section>
+    
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="./assets/Travelhublogo.png" alt="TravelHubLogo" />
+      </div>
+      <p>Follow us on</p>
+      <div class="social-icons">
+        <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+       
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>About us</h4>
+        <ul>
+          <li><a href="#">About Global Trekker</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Work For Us</a></li>
+          <li><a href="#">Write For Us</a></li>
+          <li><a href="#">Cookie Settings</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Travel Interest</h4>
+        <ul>
+          <li><a href="#">Family Vacation</a></li>
+          <li><a href="#">Honeymoon</a></li>
+          <li><a href="#">Adventure</a></li>
+          <li><a href="#">Art and Culture</a></li>
+          <li><a href="#">Wildlife and Nature</a></li>
+          <li><a href="#">Travel on a Budget</a></li>
+          <li><a href="#">Road Trips</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Top Destinations</h4>
+        <ul>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Italy</a></li>
+          <li><a href="#">London</a></li>
+          <li><a href="#">New York City</a></li>
+          <li><a href="#">Tokyo</a></li>
+          <li><a href="#">Los Angeles</a></li>
+          <li><a href="#">Scotland</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Guidebook Shop</h4>
+        <ul>
+          <li><a href="#">Destination Guide</a></li>
+          <li><a href="#">Non-English Guides</a></li>
+          <li><a href="#">Shopping Guides</a></li>
+          <li><a href="#">Kid’s Travel Guides</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    Copyright © 2024 Travel Hub. All rights reserved.
+  </div>
+</footer>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
