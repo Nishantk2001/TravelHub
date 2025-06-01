@@ -28,10 +28,9 @@ body {
   position: sticky;
   top: 0;
   background-color: #ffffff;
-  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   z-index: 9999;
 }
 
@@ -117,6 +116,8 @@ body {
 
 /* Hero Section */
 .hero {
+  max-width: 87.5rem; /* 1400px */
+  margin: 0 auto;
   background-image: url("./assets/wmap.png");
   background-repeat: no-repeat;
   background-position: right center;
@@ -140,8 +141,8 @@ body {
 }
 
 .highlight {
-  color: #f97316;
-  border-bottom: 2px solid #f97316;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .hero-content p {
@@ -156,7 +157,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* Button 1: Explore Packages */
 .btn-explore {
   background: linear-gradient(135deg, #f97316, #df660f);
   color: white;
@@ -172,11 +172,10 @@ body {
   background: linear-gradient(135deg, #f58a3d, #e16106);
 }
 
-/* Button 2: Start Planning */
 .btn-plan {
   background: white;
-  color: #f97316;
-  border: 2px solid #f97316;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
   padding: 0.75rem 1.5rem;
   border-radius: 30px;
   font-size: 1rem;
@@ -246,7 +245,7 @@ body {
 }
 
 .btn-explore {
-  background-color: #ff6200;
+  background-color: var(--secondary-color);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -263,7 +262,7 @@ body {
 .btn-plan {
   background-color: transparent;
   color: #333;
-  border: 2px solid #ff6200;
+  border: 2px solid var(--secondary-color);
   padding: 0.75rem 1.5rem;
   font-weight: bold;
   border-radius: 25px;
@@ -281,6 +280,8 @@ body {
   padding: 3rem 2rem;
   background-color: #fdf7f3;
   font-family: "Segoe UI", sans-serif;
+  max-width: 87.5rem; /* 1400px */
+  margin: 0 auto;
 }
 
 .top-destinations h2 {
@@ -329,7 +330,7 @@ body {
   justify-content: center;
   gap: 2rem;
   /* max-width: 1200px; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .destination-cards .card {
@@ -374,8 +375,8 @@ body {
   background-color: rgb(229, 223, 223);
   color: #333;
   border: none;
-  padding: 0.6rem 1.5rem;
-  font-weight: bold;
+  padding: 0.6rem 1rem;
+  /* font-weight: bold; */
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -395,6 +396,7 @@ body {
     margin-left: 0;
   }
 }
+
 /* How It Works section */
 .how-it-works {
   display: flex;
@@ -408,7 +410,7 @@ body {
 }
 
 .container {
-  max-width: 75rem; /* 1200px */
+  max-width: 87.5rem; /* 1400px */
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -534,17 +536,10 @@ body {
 /* Testimonial-card section */
 .testimonial-section {
   padding: 80px 0;
-  /* background: linear-gradient(
-    135deg,
-    var(--primary-color) 0%,
-    var(--secondary-color) 51%,
-    var(--primary-color) 100%
-  );
-  color: white; */
   text-align: center;
 }
 .testimonial-section .container {
-  max-width: 1200px;
+  max-width: 87.5rem; /* 1400px */
   margin: 0 auto;
   padding: 20px;
   display: flex;

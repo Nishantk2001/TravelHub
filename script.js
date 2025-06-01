@@ -2,6 +2,7 @@ document.getElementById("burger").addEventListener("click", function () {
   document.getElementById("navLinks").classList.toggle("active");
 });
 
+// Testimonial section js
 document.addEventListener("DOMContentLoaded", function () {
   const carousel = document.querySelector(".testimonial-carousel");
   const cards = document.querySelectorAll(".testimonial-card");
@@ -107,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
   updateCarousel();
 });
 
+// Subscription section js
 function subscribe(e) {
   e.preventDefault();
   const emailInput = document.getElementById("email");
