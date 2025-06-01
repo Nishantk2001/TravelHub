@@ -74,7 +74,7 @@ body {
   font-size: 0.9rem;
   outline: none;
   transition: border-color 0.3s ease;
-  width: 160px;
+  width: 250px;
 }
 
 .search-box i {
@@ -121,21 +121,6 @@ body {
   transform-origin: left center;
 }
 
-/* Burger Active State */
-.burger.active span:first-child {
-  transform: rotate(45deg) translate(4px, 0);
-  width: 20px;
-}
-
-.burger.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.burger.active span:last-child {
-  transform: rotate(-45deg) translate(4px, 0);
-  width: 20px;
-}
-
 /* Sidebar Styles */
 .sidebar {
   position: fixed;
@@ -148,6 +133,18 @@ body {
   transition: right 0.3s ease;
   z-index: 9999;
   padding: 40px 20px 20px;
+}
+.sidebar-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.close-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 
 .sidebar.active {
@@ -202,6 +199,9 @@ body {
   .nav .search-box,
   .nav .sign-in {
     display: none;
+  }
+  .logo {
+    cursor: pointer;
   }
   .logo img {
     width: auto;

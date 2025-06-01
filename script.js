@@ -1,11 +1,18 @@
 const burger = document.getElementById("burger");
 const sidebar = document.getElementById("sidebar");
 const overlay = document.getElementById("overlay");
+const closeBtn = document.getElementById("closeBtn");
 
 burger.addEventListener("click", () => {
   burger.classList.toggle("active");
   sidebar.classList.toggle("active");
   overlay.classList.toggle("active");
+
+  // Close sidebar
+  closeBtn.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+    overlay.classList.remove("active");
+  });
 
   // Prevent scrolling when sidebar is open
   if (sidebar.classList.contains("active")) {
