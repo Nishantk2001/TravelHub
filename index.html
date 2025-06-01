@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar"> 
       <div class="logo">
         <img src="./assets/Travelhublogo.png" alt="TravelHub Logo" />  
       </div>
@@ -41,6 +41,26 @@
         </div>
       </div>
     </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <nav class="nav-links">
+        <a href="#Destinations">Destination</a>
+        <a href="#Travelplan">Travel plan</a>
+        <a href="#testimonial">Testimonial</a>
+        <a href="#">Blog</a>
+      </nav>
+
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+
+      <button class="sign-in">Sign in</button>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
 
     <!-- Hero-main Section -->
     <section class="hero">
@@ -317,7 +337,7 @@
   
 <!-- subscription section -->
 <section class="subscribe-section">
-  <h1>Get Your Travel Inspiration<br />Straight to Your Inbox</h1>
+  <h1>Ready to explore the world?</h1>
   <form class="form-container" onsubmit="subscribe(event)">
     <input type="email" placeholder="Email address" id="email" required />
     <button type="submit">Subscribe</button>

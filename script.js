@@ -1,5 +1,36 @@
-document.getElementById("burger").addEventListener("click", function () {
-  document.getElementById("navLinks").classList.toggle("active");
+const burger = document.getElementById("burger");
+const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("overlay");
+
+burger.addEventListener("click", () => {
+  burger.classList.toggle("active");
+  sidebar.classList.toggle("active");
+  overlay.classList.toggle("active");
+
+  // Prevent scrolling when sidebar is open
+  if (sidebar.classList.contains("active")) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+  }
+});
+
+overlay.addEventListener("click", () => {
+  burger.classList.remove("active");
+  sidebar.classList.remove("active");
+  overlay.classList.remove("active");
+  document.body.style.overflow = "";
+});
+
+// Close sidebar when clicking on links (optional)
+const navLinks = document.querySelectorAll(".sidebar .nav-links a");
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    burger.classList.remove("active");
+    sidebar.classList.remove("active");
+    overlay.classList.remove("active");
+    document.body.style.overflow = "";
+  });
 });
 
 // Testimonial section js
@@ -93,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   carouselContainer.addEventListener("mouseleave", () => {
-    autoRotate = setInterval(nextSlide, 5000);
+    autoRotate = setInterval(nextSlide, 8000);
   });
 
   // Handle window resize
