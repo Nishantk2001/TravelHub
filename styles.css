@@ -101,7 +101,7 @@ body {
 }
 
 .sign-in:hover {
-  background: #333;
+  background-color: #242121;
 }
 
 .burger {
@@ -356,7 +356,7 @@ body {
 
 /* -------------- Featured DestinationsSection -----------------*/
 .top-destinations {
-  padding: 3rem 4rem;
+  padding: 4rem 4rem;
   background-color: #fdf7f3;
   font-family: "Segoe UI", sans-serif;
   max-width: 100%;
@@ -411,7 +411,8 @@ body {
 }
 
 .destination-cards .card {
-  flex: 1 1 calc(25% - 2rem);
+  /* flex: 1 1 min(350px, 100%); */
+  width: 350px;
   background-color: white;
   border-radius: 1rem;
   overflow: hidden;
@@ -461,11 +462,6 @@ body {
   background-color: var(--secondary-color);
   color: #fff;
 }
-@media (max-width: 1224px) {
-  .destination-cards .card {
-    flex: 1 1 calc(50% - 2rem);
-  }
-}
 
 @media (max-width: 768px) {
   .top-destinations {
@@ -493,7 +489,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  padding: 3rem 4rem;
+  padding: 4rem 4rem;
 }
 .image-column,
 .text-column {
