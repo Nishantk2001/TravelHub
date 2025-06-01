@@ -22,7 +22,7 @@ body {
   padding: 0 0rem;
 }
 
-/* ===== Navbar Container ===== */
+/* ------------- Navbar Container ------------- */
 .navbar {
   display: flex;
   position: sticky;
@@ -121,7 +121,6 @@ body {
   transform-origin: left center;
 }
 
-/* Sidebar Styles */
 .sidebar {
   position: fixed;
   top: 0;
@@ -191,7 +190,7 @@ body {
   visibility: visible;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1124px) {
   .navbar {
     padding: 1rem 2rem;
   }
@@ -213,13 +212,13 @@ body {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1124px) {
   .sidebar {
     display: none;
   }
 }
 
-/* Hero Section */
+/*------------------- Hero Section ---------------- */
 .hero {
   max-width: 100%;
   margin: 0 auto;
@@ -355,7 +354,7 @@ body {
   color: white;
 }
 
-/* Featured DestinationsSection */
+/* -------------- Featured DestinationsSection -----------------*/
 .top-destinations {
   padding: 3rem 4rem;
   background-color: #fdf7f3;
@@ -461,6 +460,11 @@ body {
 .btn-feature:hover {
   background-color: var(--secondary-color);
   color: #fff;
+}
+@media (max-width: 1224px) {
+  .destination-cards .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
 }
 
 @media (max-width: 768px) {
